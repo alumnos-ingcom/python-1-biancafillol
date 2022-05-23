@@ -1,3 +1,4 @@
+from plantilla import principal
 ################
 # Bianca Fillol - @bianfillol
 # UNRN Andina - Introducción a la Ingenieria en Computación
@@ -7,25 +8,13 @@
 #POSTCONDICIÓN: Obtener un número decimal expresado en grados fahrenheit,
 #y obtener un número decimal expresado en grados centigrados.
 def convertir_a_fahrenheit(centigrados):
-    """
-    convertir_a_fahrenheit: Esta función se encarga de convertir
-    los grados centigrados a fahrenheit.
-    """
-    return f"Convertidos a grados fahrenheit son: {((9*centigrados)/5)+32}° grados."
+    """Esta función convierte los grados centigrados a fahrenheit."""
+    resultado_fah=((9*centigrados)/5)+32
+    print (f"Convertidos a grados fahrenheit son: {resultado_fah}° grados.")
 def convertir_a_centigrados(fahrenheit):
-    """
-    convertir_a_centigrados: Esta función se encarga de convertir
-    los grados fahrenheit a grados centigrados.
-    """
-    return f"Convertidos a grados centigrados son: {(5*(fahrenheit-32))/9}° grados."
-print(convertir_a_fahrenheit(centigrados=float(input("Ingrese los grados centigrados: "))))
-print(convertir_a_centigrados(fahrenheit=float(input("Ingrese los grados fahrenheit: "))))
-def principal():
-    """
-    Esta función forma parte de la plantilla.
-    """
-    pass
-if __name__ == "__main__":
-    principal()
-
-
+    """Esta función convierte los grados fahrenheit a centigrados."""
+    resultado_centi=(5*(fahrenheit-32))/9
+    print(f"Convertidos a grados fahrenheit son: {resultado_centi}° grados.")
+convertir_a_fahrenheit(float(input("Ingrese los grados centigrados: ")))
+convertir_a_centigrados(float(input("Ingrese los grados fahrenheit: ")))
+principal()
