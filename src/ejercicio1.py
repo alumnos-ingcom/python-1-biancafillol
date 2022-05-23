@@ -21,7 +21,11 @@ def convertir_a_centigrados(fahrenheit):
 print(convertir_a_fahrenheit(centigrados=float(input("Ingrese los grados centigrados: "))))
 print(convertir_a_centigrados(fahrenheit=float(input("Ingrese los grados fahrenheit: "))))
 def principal():
+    """
+    Esta función forma parte de la plantilla.
+    """
     pass
 if __name__ == "__main__":
     principal()
- 
+
+
