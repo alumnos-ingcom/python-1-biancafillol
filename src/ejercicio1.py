@@ -9,15 +9,15 @@
 def convertir_a_fahrenheit(centigrados):
     """Esta función convierte los grados centigrados a fahrenheit."""
     resultado_fah=((9*centigrados)/5)+32
-    print (f"Convertidos a grados fahrenheit son: {resultado_fah}° grados.")
+    return f"Convertidos a grados fahrenheit son: {resultado_fah}° grados."
 def convertir_a_centigrados(fahrenheit):
     """Esta función convierte los grados fahrenheit a centigrados."""
     resultado_centi=(5*(fahrenheit-32))/9
-    print(f"Convertidos a grados fahrenheit son: {resultado_centi}° grados.")
-convertir_a_fahrenheit(float(input("Ingrese los grados centigrados: ")))
-convertir_a_centigrados(float(input("Ingrese los grados fahrenheit: ")))
+    return f"Convertidos a grados centigrados son: {resultado_centi}° grados."
 def principal():
-    pass
-
+    """Esta función se encarga de la parte 'interactiva' del programa.
+    """
+    convertir_a_fahrenheit(float(input("Ingrese los grados centigrados: ")))
+    convertir_a_centigrados(float(input("Ingrese los grados fahrenheit: ")))
 if __name__ == "__main__":
     principal()
