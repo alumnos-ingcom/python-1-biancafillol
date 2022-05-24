@@ -21,7 +21,8 @@ def division_lenta(dividendo, divisor):
 def principal():
     """Esta función se encarga de la parte 'interactiva' del programa.
     """
-    division_lenta(dividendo=int(input("Ingrese el dividendo: ")),
-    divisor=int(input("Ingrese el divisor: ")))
+    dividendo=int(input("Ingrese el dividendo: "))
+    divisor=int(input("Ingrese el divisor: "))
+    return division_lenta(dividendo, divisor)
 if __name__ == "__main__":
     principal()
