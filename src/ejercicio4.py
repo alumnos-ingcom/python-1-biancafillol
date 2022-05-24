@@ -1,4 +1,3 @@
-from plantilla import principal
 ################
 # Bianca Fillol - @bianfillol
 # UNRN Andina - Introducción a la Ingenieria en Computación
@@ -25,4 +24,8 @@ def suma_lenta(numero, otro_numero):
         print(f" = {numero}")
 suma_lenta(numero=int(input("Ingrese el primer número: ")),
 otro_numero=int(input("Ingrese el segundo número: ")))
-principal()
+def principal():
+    pass
+
+if __name__ == "__main__":
+    principal()
