@@ -5,22 +5,23 @@
 #PRECONDICIÓN: Ingresar dos números reales
 #POSTCONDICIÓN: Obtener un -1, un 1, o un 0.
 def compara(numero, otro_numero):
-    """compara: Esta función suma y resta dos valores.
-    Luego compara si el resultado de la suma es menor, mayor
-    o igual al de la resta.
+    """Esta función compara dos valores y determina si el primero es mayor, menor
+    o igual al segundo valor.
     """
-    suma=numero + otro_numero
-    resta=numero - otro_numero
-    if suma<resta:
+    suma_uno=numero + numero
+    resta_uno=numero - otro_numero
+    suma_dos=otro_numero + otro_numero
+    resta_dos=otro_numero - otro_numero
+    if suma_uno<suma_dos:
         print (-1)
-    elif suma==resta:
+    elif resta_uno==resta_dos:
         print (0)
     else:
         print (1)
-compara(numero=float(input("Ingrese el primer número: ")),
-otro_numero=float(input("Ingrese el segundo número: ")))
 def principal():
-    pass
-
+    """Esta función se encarga de la parte 'interactiva' del programa.
+    """
+    compara(numero=float(input("Ingrese el primer número: ")),
+otro_numero=float(input("Ingrese el segundo número: ")))
 if __name__ == "__main__":
     principal()
