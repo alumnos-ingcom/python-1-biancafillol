@@ -1,4 +1,3 @@
-from plantilla import principal
 ################
 # Bianca Fillol - @bianfillol
 # UNRN Andina - Introducción a la Ingenieria en Computación
@@ -17,4 +16,9 @@ def convertir_a_centigrados(fahrenheit):
     print(f"Convertidos a grados fahrenheit son: {resultado_centi}° grados.")
 convertir_a_fahrenheit(float(input("Ingrese los grados centigrados: ")))
 convertir_a_centigrados(float(input("Ingrese los grados fahrenheit: ")))
-principal()
+def principal():
+    pass
+
+if __name__ == "__main__":
+    principal()
+    
