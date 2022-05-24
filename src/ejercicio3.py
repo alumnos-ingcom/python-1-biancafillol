@@ -1,4 +1,3 @@
-from plantilla import principal
 ################
 # Bianca Fillol - @bianfillol
 # UNRN Andina - Introducción a la Ingenieria en Computación
@@ -20,4 +19,8 @@ def compara(numero, otro_numero):
         print (1)
 compara(numero=float(input("Ingrese el primer número: ")),
 otro_numero=float(input("Ingrese el segundo número: ")))
-principal()
+def principal():
+    pass
+
+if __name__ == "__main__":
+    principal()
