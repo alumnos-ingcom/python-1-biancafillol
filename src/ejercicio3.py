@@ -13,11 +13,12 @@ def compara(numero, otro_numero):
     suma_dos=otro_numero + otro_numero
     resta_dos=otro_numero - otro_numero
     if suma_uno<suma_dos:
-        print (-1)
+        resultado= -1
     elif resta_uno==resta_dos:
-        print (0)
+        resultado= 0
     else:
-        print (1)
+        resultado= 1
+    return resultado
 def principal():
     """Esta función se encarga de la parte 'interactiva' del programa.
     """
