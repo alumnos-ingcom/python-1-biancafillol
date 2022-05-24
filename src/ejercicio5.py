@@ -1,4 +1,3 @@
-from plantilla import principal
 ################
 # Bianca Fillol - @bianfillol
 # UNRN Andina - Introducción a la Ingenieria en Computación
@@ -21,4 +20,8 @@ def division_lenta(dividendo, divisor):
     print(f"El resto es: {resto}")
 division_lenta(dividendo=int(input("Ingrese el dividendo: ")),
 divisor=int(input("Ingrese el divisor: ")))
-principal()
+def principal():
+    pass
+
+if __name__ == "__main__":
+    principal()
