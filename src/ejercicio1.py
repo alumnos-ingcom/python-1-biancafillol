@@ -8,16 +8,18 @@
 #y obtener un número decimal expresado en grados centigrados.
 def convertir_a_fahrenheit(centigrados):
     """Esta función convierte los grados centigrados a fahrenheit."""
-    resultado_fah=((9*centigrados)/5)+32
-    return f"Convertidos a grados fahrenheit son: {resultado_fah}° grados."
+    resultado_f=((9*centigrados)/5)+32
+    return f"{centigrados}° convertidos a grados fahrenheit son: {resultado_f}° grados."
 def convertir_a_centigrados(fahrenheit):
     """Esta función convierte los grados fahrenheit a centigrados."""
-    resultado_centi=(5*(fahrenheit-32))/9
-    return f"Convertidos a grados centigrados son: {resultado_centi}° grados."
+    resultado_c=(5*(fahrenheit-32))/9
+    return f"{fahrenheit}° convertidos a grados centigrados son: {resultado_c}° grados."
 def principal():
     """Esta función se encarga de la parte 'interactiva' del programa.
     """
-    convertir_a_fahrenheit(float(input("Ingrese los grados centigrados: ")))
-    convertir_a_centigrados(float(input("Ingrese los grados fahrenheit: ")))
+    centigrados=float(input("Ingrese los grados centigrados: "))
+    fahrenheit=float(input("Ingrese los grados fahrenheit: "))
+    print(convertir_a_fahrenheit(centigrados))
+    print(convertir_a_centigrados(fahrenheit))
 if __name__ == "__main__":
     principal()
