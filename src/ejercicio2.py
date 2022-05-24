@@ -1,4 +1,3 @@
-from plantilla import principal
 ################
 # Bianca Fillol - @bianfillol
 # UNRN Andina - Introducción a la Ingenieria en Computación
@@ -19,4 +18,8 @@ def signo(numero):
     else:
         print (f"{resultado} es negativo (-).")
 signo(numero=float(input("Ingrese un número: ")))
-principal()
+def principal():
+    pass
+
+if __name__ == "__main__":
+    principal()
