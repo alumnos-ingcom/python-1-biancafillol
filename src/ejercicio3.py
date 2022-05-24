@@ -22,7 +22,8 @@ def compara(numero, otro_numero):
 def principal():
     """Esta función se encarga de la parte 'interactiva' del programa.
     """
-    compara(numero=float(input("Ingrese el primer número: ")),
-otro_numero=float(input("Ingrese el segundo número: ")))
+    numero=float(input("Ingrese el primer número: "))
+    otro_numero= float(input("Ingrese el segundo número: "))
+    print(compara(numero,otro_numero))
 if __name__ == "__main__":
     principal()
