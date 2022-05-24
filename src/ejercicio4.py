@@ -1,3 +1,9 @@
+################
+# Bianca Fillol - @bianfillol
+# UNRN Andina - Introducción a la Ingenieria en Computación
+################
+#PRECONDICIÓN: Ingresar dos números enteros.
+#POSTCONDICIÓN: Obtener el resultado de la suma lenta de los dos números.
 def suma_lenta(numero, otro_numero):
     """Esta función suma el primer número con el segundo número,
     (el segundo es separado por dígitos en 1 en 1).
