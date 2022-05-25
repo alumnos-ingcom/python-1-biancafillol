@@ -24,6 +24,7 @@ def principal():
     """
     numero=float(input("Ingrese el primer número: "))
     otro_numero= float(input("Ingrese el segundo número: "))
-    print(compara(numero,otro_numero))
+    respuesta=compara(numero, otro_numero)
+    print(respuesta)
 if __name__ == "__main__":
     principal()
