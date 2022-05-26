@@ -25,7 +25,7 @@ def ordenar_mayor_a_menor(uno, dos, tres):
             lista=[dos,tres,uno]
     elif uno==dos==tres:
         lista=[uno,dos, tres]
-    respuesta_my_mn=f"De mayor a menor: {lista}."
+    respuesta_my_mn=lista
     return respuesta_my_mn
 def ordenar_menor_a_mayor(uno, dos, tres):
     """Esta función ordena en una lista los tres valores de menor a mayor.
@@ -47,7 +47,7 @@ def ordenar_menor_a_mayor(uno, dos, tres):
             lista=[uno,tres,dos]
     elif uno==dos==tres:
         lista=[uno,dos, tres]
-    respuesta_mn_my= f"De menor a mayor: {lista}."
+    respuesta_mn_my= lista
     return respuesta_mn_my
 def principal():
     """Esta función se encarga de la parte 'interactiva' del programa.
@@ -57,7 +57,7 @@ def principal():
     tres=int(input("Ingrese el tercer valor: "))
     resultado_my=(ordenar_mayor_a_menor(uno, dos, tres))
     resultado_mn=(ordenar_menor_a_mayor(uno, dos, tres))
-    print(resultado_my)
-    print(resultado_mn)
+    print(f"De mayor a menor: {resultado_my}.")
+    print(f"De menor a mayor: {resultado_mn}.")
 if __name__ == "__main__":
     principal()
