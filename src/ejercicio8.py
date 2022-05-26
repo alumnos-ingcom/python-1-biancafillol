@@ -14,12 +14,13 @@ def es_primo(numero):
         if numero%contador==0:
             divisores=divisores+1
         contador=contador + 1
-    respuesta = bool(divisores==2)
+    respuesta = divisores==2
     return respuesta
 def principal():
     """Esta función se encarga de la parte 'interactiva' del programa.
     """
     numero=int(input("Ingrese un número: "))
-    print(es_primo(numero))
+    resultado=es_primo(numero)
+    print(resultado)
 if __name__ == "__main__":
     principal()
