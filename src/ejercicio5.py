@@ -13,7 +13,7 @@ def division_lenta(dividendo, divisor):
         dividendo=dividendo-divisor
         cociente=cociente+1
     resto=dividendo
-    respuesta= f"El cociente es {cociente} y el resto es {resto}."
+    respuesta= cociente, resto
     return respuesta
 def principal():
     """Esta función se encarga de la parte 'interactiva' del programa.
@@ -21,6 +21,6 @@ def principal():
     dividendo=int(input("Ingrese el dividendo: "))
     divisor=int(input("Ingrese el divisor: "))
     resultado= division_lenta(dividendo, divisor)
-    print(resultado)
+    print(f"El cociente es {resultado[0]} y el resto es {resultado[1]}.")
 if __name__ == "__main__":
     principal()
