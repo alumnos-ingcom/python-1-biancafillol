@@ -24,6 +24,7 @@ def principal():
     """Esta función se encarga de la parte 'interactiva' del programa.
     """
     numero = int(input("Ingrese un número entero positivo: "))
-    print(factores_primos(numero))
+    resultado=factores_primos(numero)
+    print(resultado)
 if __name__=="__main__":
     principal()
