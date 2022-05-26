@@ -9,20 +9,18 @@ def division_lenta(dividendo, divisor):
     por el divisor hasta que el resultado de menor o igual al dividendo.
     """
     cociente=0
-    print(dividendo,end="")
     while dividendo>=divisor:
-        print(f" - {divisor}",end="")
         dividendo=dividendo-divisor
         cociente=cociente+1
     resto=dividendo
-    print(f" = {resto}")
-    print(f"El cociente es: {cociente}")
-    print(f"El resto es: {resto}")
+    respuesta= f"El cociente es {cociente} y el resto es {resto}."
+    return respuesta
 def principal():
     """Esta función se encarga de la parte 'interactiva' del programa.
     """
     dividendo=int(input("Ingrese el dividendo: "))
     divisor=int(input("Ingrese el divisor: "))
-    return division_lenta(dividendo, divisor)
+    resultado= division_lenta(dividendo, divisor)
+    print(resultado)
 if __name__ == "__main__":
     principal()
