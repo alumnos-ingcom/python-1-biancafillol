@@ -18,7 +18,7 @@ def decimal_a_sexadecimal(numero):
     horas_n= (numero //60)//60
     minutos_n=(numero//60)%60
     segundos_n=numero%60
-    respuest= [horas_n, minutos_n, segundos_n]
+    respuest= (horas_n, minutos_n, segundos_n)
     return respuest
 def principal():
     """Esta función se encarga de la parte 'interactiva' del programa.
