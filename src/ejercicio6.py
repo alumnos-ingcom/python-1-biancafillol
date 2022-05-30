@@ -10,44 +10,44 @@ def ordenar_mayor_a_menor(uno, dos, tres):
     """
     if tres<uno>dos:
         if tres>dos:
-            lista=[uno,tres,dos]
+            tupla=(uno,tres,dos)
         else:
-            lista=[uno,dos,tres]
+            tupla=(uno,dos,tres)
     elif uno<tres>dos:
         if uno>dos:
-            lista=[tres,uno,dos]
+            tupla=(tres,uno,dos)
         else:
-            lista=[tres,dos,uno]
+            tupla=(tres,dos,uno)
     elif uno<dos>tres:
         if uno>tres:
-            lista=[dos,uno,tres]
+            tupla=(dos,uno,tres)
         else:
-            lista=[dos,tres,uno]
+            tupla=(dos,tres,uno)
     elif uno==dos==tres:
-        lista=[uno,dos, tres]
-    respuesta_my_mn=lista
+        tupla=(uno,dos, tres)
+    respuesta_my_mn=tupla
     return respuesta_my_mn
 def ordenar_menor_a_mayor(uno, dos, tres):
     """Esta función ordena en una lista los tres valores de menor a mayor.
     """
     if tres<uno>dos:
         if tres>dos:
-            lista=[dos,tres,uno]
+            tupla=(dos,tres,uno)
         else:
-            lista=[tres,dos,uno]
+            tupla=(tres,dos,uno)
     elif uno<tres>dos:
         if uno>dos:
-            lista=[dos,uno,tres]
+            tupla=(dos,uno,tres)
         else:
-            lista=[uno,dos,tres]
+            tupla=(uno,dos,tres)
     elif uno<dos>tres:
         if uno>tres:
-            lista=[tres,uno,dos]
+            tupla=(tres,uno,dos)
         else:
-            lista=[uno,tres,dos]
+            tupla=(uno,tres,dos)
     elif uno==dos==tres:
-        lista=[uno,dos, tres]
-    respuesta_mn_my= lista
+        tupla=(uno,dos, tres)
+    respuesta_mn_my= tupla
     return respuesta_mn_my
 def principal():
     """Esta función se encarga de la parte 'interactiva' del programa.
