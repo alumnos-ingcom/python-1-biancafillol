@@ -22,6 +22,6 @@ def principal():
     respuesta_f=convertir_a_fahrenheit(centigrados)
     respuesta_c=convertir_a_centigrados(fahrenheit)
     print(f"{centigrados}° convertidos a fahrenheit son {respuesta_f}° grados.")
-    print(f"{fahrenheit}° convertidos a fahrenheit son {respuesta_c}° grados.")
+    print(f"{fahrenheit}° convertidos a centigrados son {respuesta_c}° grados.")
 if __name__ == "__main__":
     principal()
