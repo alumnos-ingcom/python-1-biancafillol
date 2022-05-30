@@ -7,24 +7,23 @@
 def factores_primos(numero):
     """Esta función descompone el número y ordena en una lista sus factores primos.
     """
-    if numero>0:
-        num=numero
-        primo=2
-        lista_factores_primos=[]
-        while primo<=numero:
-            while numero% primo==0:
-                lista_factores_primos.append(primo)
-                numero=numero/primo
-            primo=primo+1
-        respuesta= f"Los factores primos de {num} son: {lista_factores_primos}. "
-    else:
-        respuesta= "El número ingresado no es positivo, intentalo de nuevo."
+    primo=2
+    lista_factores_primos=[]
+    while primo<=numero:
+        while numero% primo==0:
+            lista_factores_primos.append(primo)
+            numero=numero/primo
+        primo=primo+1
+    respuesta= tuple(lista_factores_primos)
     return respuesta
 def principal():
     """Esta función se encarga de la parte 'interactiva' del programa.
     """
     numero = int(input("Ingrese un número entero positivo: "))
-    resultado=factores_primos(numero)
-    print(resultado)
+    if numero>0:
+        resultado=factores_primos(numero)
+        print(f"Los factores primos de {numero} son: {resultado}")
+    else:
+        print("El número ingresado no es positivo, intentalo de nuevo.")
 if __name__=="__main__":
     principal()
