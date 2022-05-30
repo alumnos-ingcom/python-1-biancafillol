@@ -12,17 +12,17 @@ def signo(numero):
     """
     resultado= numero + numero
     if resultado>0:
-        respuesta="es positivo."
+        respuesta=1
     elif resultado==0:
-        respuesta="es neutro."
+        respuesta=0
     else:
-        respuesta="es negativo."
+        respuesta=-1
     return respuesta
 def principal():
     """Esta función se encarga de la parte 'interactiva' del programa.
     """
     numero=float(input("Ingrese un número: "))
     resultado=signo(numero)
-    print(f"{numero} {resultado}")
+    print(resultado)
 if __name__ == "__main__":
     principal()
