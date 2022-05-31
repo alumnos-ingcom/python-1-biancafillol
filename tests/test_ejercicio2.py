@@ -1,6 +1,9 @@
 """Test del Ejercicio N°2
 """
-import pytest
+################
+# Bianca Fillol - @bianfillol
+# UNRN Andina - Introducción a la Ingenieria en Computación
+################
 from src.ejercicio2 import signo
 def test_signo_negativo():
     """Esta función evalúa si signo funciona correctamente
