@@ -1,4 +1,4 @@
-"""Ejercicio 1
+"""Test del Ejercicio N°1
 """
 import pytest
 from src.ejercicio1 import convertir_a_fahrenheit, convertir_a_centigrados
