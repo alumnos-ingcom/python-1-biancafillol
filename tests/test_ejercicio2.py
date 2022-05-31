@@ -1,4 +1,4 @@
-"""Ejercicio 2
+"""Test del Ejercicio N°2
 """
 import pytest
 from src.ejercicio2 import signo
