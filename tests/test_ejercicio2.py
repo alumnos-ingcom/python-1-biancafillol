@@ -1,3 +1,5 @@
+"""Ejercicio 2
+"""
 import pytest
 from src.ejercicio2 import signo
 def test_signo_negativo():
