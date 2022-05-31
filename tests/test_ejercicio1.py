@@ -14,6 +14,6 @@ def test_convertir_a_centigrados():
     """Esta función evalúa si convertir_a_centigrados funciona correctamente.
     """
     fahrenheit=77.0
-    resultado=convertir_a_centigrados(numero)
+    resultado=convertir_a_centigrados(fahrenheit)
     assert isinstance(resultado, float), "El resultado debe ser un número decimal."
     assert resultado==25.0, "No se obtiene el resultado esperado."
