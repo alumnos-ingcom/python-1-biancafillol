@@ -51,3 +51,24 @@ def test_es_multiplo_negativos():
     multiplo=-8
     resultado=es_multiplo(numero, multiplo)
     assert isinstance(resultado, str), "El resultado debe ser un valor string."
+def test_es_multiplo_negativo_primero():
+    """Esta función evalúa si es_multiplo funciona correctamente.
+    """
+    numero=-3
+    multiplo=-7
+    resultado=es_multiplo(numero, multiplo)
+    assert isinstance(resultado, str), "El resultado debe ser un valor string."
+def test_es_multiplo_negativo_segundo():
+    """Esta función evalúa si es_multiplo funciona correctamente.
+    """
+    numero=9
+    multiplo=-32
+    resultado=es_multiplo(numero, multiplo)
+    assert isinstance(resultado, str), "El resultado debe ser un valor string."
+def test_es_multiplo_iguales_negativos():
+    """Esta función evalúa si es_multiplo funciona correctamente.
+    """
+    numero=-3
+    multiplo=-3
+    resultado=es_multiplo(numero, multiplo)
+    assert isinstance(resultado, str), "El resultado debe ser un valor string."
