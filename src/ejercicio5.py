@@ -22,7 +22,33 @@ def principal():
     """
     dividendo=int(input("Ingrese el dividendo: "))
     divisor=int(input("Ingrese el divisor: "))
-    resultado= division_lenta(dividendo, divisor)
-    print(f"El cociente es {resultado[0]} y el resto es {resultado[1]}.")
+    if dividendo>0:
+        if divisor>0:
+            resultado= division_lenta(dividendo, divisor)
+            print(f"El cociente es {resultado[0]} y el resto es {resultado[1]}.")
+        else:
+            dividendo=abs(dividendo)
+            divisor=abs(divisor)
+            resultado= division_lenta(dividendo, divisor)
+            print(f"El cociente es -{resultado[0]} y el resto es {resultado[1]}.")
+    elif dividendo==0:
+        if divisor==0:
+            print("El divisor debe ser distinto de 0.")
+        else:
+            print("El cociente es 0 y el resto es 0.")
+    elif divisor==0:
+        if dividendo==0:
+            print("El divisor debe ser distinto de 0.")
+        else:
+            print("El divisor debe ser distinto de 0.")
+    else:
+        dividendo=abs(dividendo)
+        if divisor>0:
+            resultado= division_lenta(dividendo, divisor)
+            print(f"El cociente es -{resultado[0]} y el resto es {resultado[1]}.")
+        else:
+            divisor=abs(divisor)
+            resultado= division_lenta(dividendo, divisor)
+            print(f"El cociente es {resultado[0]} y el resto es {resultado[1]}.")
 if __name__ == "__main__":
     principal()
