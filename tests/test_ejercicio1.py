@@ -19,6 +19,21 @@ def test_convertir_a_fahrenheit_negativo():
     resultado=convertir_a_fahrenheit(centigrados)
     assert isinstance(resultado, float), "El resultado debe ser un número decimal."
     assert resultado==-47.56, "No se obtiene el resultado esperado."
+def test_convertir_a_fahrenheit_cero():
+    """Esta función evalúa si convertir_a_fahrenheit funciona correctamente.
+    """
+    centigrados=0.0
+    resultado=convertir_a_fahrenheit(centigrados)
+    assert isinstance(resultado, float), "El resultado debe ser un número decimal."
+    assert resultado==32.0, "No se obtiene el resultado esperado."
+def test_convertir_a_fahrenheit_negativo_a_positivo():
+    """Esta función evalúa si convertir_a_fahrenheit funciona correctamente.
+    """
+    centigrados=-4.0
+    resultado=convertir_a_fahrenheit(centigrados)
+    assert isinstance(resultado, float), "El resultado debe ser un número decimal."
+    assert resultado==24.8, "No se obtiene el resultado esperado."
+#---------------------CENTIGRADOS----------------------
 def test_convertir_a_centigrados_positivo():
     """Esta función evalúa si convertir_a_centigrados funciona correctamente.
     """
@@ -33,3 +48,17 @@ def test_convertir_a_centigrados_negativo():
     resultado=convertir_a_centigrados(fahrenheit)
     assert isinstance(resultado, float), "El resultado debe ser un número decimal."
     assert resultado==-20.5, "No se obtiene el resultado esperado."
+def test_convertir_a_centigrados_cero():
+    """Esta función evalúa si convertir_a_centigrados funciona correctamente.
+    """
+    fahrenheit=0.0
+    resultado=convertir_a_centigrados(fahrenheit)
+    assert isinstance(resultado, float), "El resultado debe ser un número decimal."
+    assert resultado==-17.77777777777778, "No se obtiene el resultado esperado."
+def test_convertir_a_centigrados_positivo_a_negativo():
+    """Esta función evalúa si convertir_a_centigrados funciona correctamente.
+    """
+    fahrenheit=4.0
+    resultado=convertir_a_centigrados(fahrenheit)
+    assert isinstance(resultado, float), "El resultado debe ser un número decimal."
+    assert resultado==-15.555555555555555, "No se obtiene el resultado esperado."
