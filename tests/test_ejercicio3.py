@@ -93,4 +93,3 @@ def test_compara_cero_segundo_negativo():
     resultado=compara(numero_uno, numero_dos)
     assert isinstance(resultado, int), "El resultado debe ser un número entero."
     assert resultado==-1, "No se obtiene el resultado esperado."
-
