@@ -11,21 +11,24 @@ def factores_primos(numero):
     """
     primo=2
     lista_factores_primos=[]
-    while primo<=numero:
-        while numero% primo==0:
-            lista_factores_primos.append(primo)
-            numero=numero/primo
-        primo=primo+1
-    respuesta= tuple(lista_factores_primos)
+    if numero>0:
+        while primo<=numero:
+            while numero% primo==0:
+                lista_factores_primos.append(primo)
+                numero=numero/primo
+            primo=primo+1
+        respuesta= tuple(lista_factores_primos)
+    else:
+        respuesta="El número ingresado no es positivo, intentalo de nuevo."
     return respuesta
 def principal():
     """Esta función se encarga de la parte 'interactiva' del programa.
     """
     numero = int(input("Ingrese un número entero positivo: "))
+    resultado=factores_primos(numero)
     if numero>0:
-        resultado=factores_primos(numero)
         print(f"Los factores primos de {numero} son: {resultado}")
     else:
-        print("El número ingresado no es positivo, intentalo de nuevo.")
+        print(resultado)
 if __name__=="__main__":
     principal()
