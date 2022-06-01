@@ -33,7 +33,7 @@ def test_es_primo_uno():
     resultado=es_primo(numero)
     assert isinstance(resultado, bool), "El resultado debe ser un valor booleano."
     assert resultado is False, "No se obtiene el resultado esperado."
-def test_es_primo_positivo_true():
+def test_es_primo_minimo_par():
     """Esta función evalúa si es_primo funciona correctamente.
     """
     numero=2
@@ -44,6 +44,41 @@ def test_es_primo_negativo_false():
     """Esta función evalúa si es_primo funciona correctamente.
     """
     numero=-8
+    resultado=es_primo(numero)
+    assert isinstance(resultado, bool), "El resultado debe ser un valor booleano."
+    assert resultado is False, "No se obtiene el resultado esperado."
+def test_es_primo_impar_igual():
+    """Esta función evalúa si es_primo funciona correctamente.
+    """
+    numero=11
+    resultado=es_primo(numero)
+    assert isinstance(resultado, bool), "El resultado debe ser un valor booleano."
+    assert resultado is True, "No se obtiene el resultado esperado."
+def test_es_primo_par_igual():
+    """Esta función evalúa si es_primo funciona correctamente.
+    """
+    numero=22
+    resultado=es_primo(numero)
+    assert isinstance(resultado, bool), "El resultado debe ser un valor booleano."
+    assert resultado is False, "No se obtiene el resultado esperado."
+def test_es_primo_minimo_impar():
+    """Esta función evalúa si es_primo funciona correctamente.
+    """
+    numero=3
+    resultado=es_primo(numero)
+    assert isinstance(resultado, bool), "El resultado debe ser un valor booleano."
+    assert resultado is True, "No se obtiene el resultado esperado."
+def test_es_primo_par_distinto():
+    """Esta función evalúa si es_primo funciona correctamente.
+    """
+    numero=46
+    resultado=es_primo(numero)
+    assert isinstance(resultado, bool), "El resultado debe ser un valor booleano."
+    assert resultado is False, "No se obtiene el resultado esperado."
+def test_es_primo_impar_disntinto():
+    """Esta función evalúa si es_primo funciona correctamente.
+    """
+    numero=39
     resultado=es_primo(numero)
     assert isinstance(resultado, bool), "El resultado debe ser un valor booleano."
     assert resultado is False, "No se obtiene el resultado esperado."
