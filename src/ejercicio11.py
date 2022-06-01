@@ -10,9 +10,12 @@ def es_multiplo(numero, multiplo):
     """Esta función determina si el segundo número es múltiplo del primero.
     """
     mul=0
-    while mul<multiplo:
-        mul=mul+numero
-    resultado= mul==multiplo
+    if numero>0 and multiplo>0:
+        while mul<multiplo:
+            mul=mul+numero
+        resultado= mul==multiplo
+    else:
+        resultado="No se ha ingresado un número positivo, intentelo de nuevo."
     return resultado
 def principal():
     """Esta función se encarga de la parte 'interactiva' del programa.
