@@ -8,7 +8,10 @@
 
 
 def principal():
+    """
+    Descripción del ejercicio
+    """
     pass
 
 if __name__ == "__main__":
-    prueba()
+    principal()
