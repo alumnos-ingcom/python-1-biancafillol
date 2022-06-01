@@ -11,44 +11,34 @@ def division_lenta(dividendo, divisor):
     por el divisor hasta que el resultado de menor o igual al dividendo.
     """
     cociente=0
-    while dividendo>=divisor:
-        dividendo=dividendo-divisor
-        cociente=cociente+1
-    resto=dividendo
-    respuesta= cociente, resto
+    inicial=dividendo, divisor
+    dividendo=abs(dividendo)
+    divisor=abs(divisor)
+    if (inicial[0]<0 and inicial[1]<0) or (inicial[0]>0 and inicial[1]>0):
+        if dividendo!=0:
+            if divisor!=0:
+                while dividendo>=divisor:
+                    dividendo=dividendo-divisor
+                    cociente=cociente+1
+                resto=dividendo
+                respuesta= cociente, resto
+            else:
+                respuesta="El divisor debe ser distinto de 0."
+    elif inicial[0]<0 or inicial[1]<0:
+        while dividendo>=divisor:
+            dividendo=dividendo-divisor
+            cociente=cociente+1
+        resto=dividendo
+        respuesta= (cociente*-1), (resto)
+    else:
+        respuesta="El cociente es 0 y el resto es 0."
     return respuesta
 def principal():
     """Esta función se encarga de la parte 'interactiva' del programa.
     """
     dividendo=int(input("Ingrese el dividendo: "))
     divisor=int(input("Ingrese el divisor: "))
-    if dividendo>0:
-        if divisor>0:
-            resultado= division_lenta(dividendo, divisor)
-            print(f"El cociente es {resultado[0]} y el resto es {resultado[1]}.")
-        else:
-            dividendo=abs(dividendo)
-            divisor=abs(divisor)
-            resultado= division_lenta(dividendo, divisor)
-            print(f"El cociente es -{resultado[0]} y el resto es {resultado[1]}.")
-    elif dividendo==0:
-        if divisor==0:
-            print("El divisor debe ser distinto de 0.")
-        else:
-            print("El cociente es 0 y el resto es 0.")
-    elif divisor==0:
-        if dividendo==0:
-            print("El divisor debe ser distinto de 0.")
-        else:
-            print("El divisor debe ser distinto de 0.")
-    else:
-        dividendo=abs(dividendo)
-        if divisor>0:
-            resultado= division_lenta(dividendo, divisor)
-            print(f"El cociente es -{resultado[0]} y el resto es {resultado[1]}.")
-        else:
-            divisor=abs(divisor)
-            resultado= division_lenta(dividendo, divisor)
-            print(f"El cociente es {resultado[0]} y el resto es {resultado[1]}.")
+    resultado= division_lenta(dividendo, divisor)
+    print(resultado)
 if __name__ == "__main__":
     principal()
