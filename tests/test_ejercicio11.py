@@ -4,7 +4,7 @@
 # Bianca Fillol - @bianfillol
 # UNRN Andina - Introducción a la Ingenieria en Computación
 ################
-from src.ejercicio10 import es_multiplo
+from src.ejercicio11 import es_multiplo
 def test_es_multiplo_mayor_primero_positivos_false():
     """Esta función evalúa si es_multiplo funciona correctamente.
     """
