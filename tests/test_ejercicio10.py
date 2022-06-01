@@ -68,3 +68,17 @@ def test_es_palindromo_minus_y_mayus_false():
     resultado=es_palindromo(texto)
     assert isinstance(resultado, bool), "El resultado debe ser un valor booleano."
     assert resultado is False, "No se obtiene el resultado esperado."
+def test_es_palindromo_iguaes_mayus():
+    """Esta función evalúa si es_palindromo funciona correctamente.
+    """
+    texto="AAAAA"
+    resultado=es_palindromo(texto)
+    assert isinstance(resultado, bool), "El resultado debe ser un valor booleano."
+    assert resultado is True, "No se obtiene el resultado esperado."
+def test_es_palindromo_distintas_mayus():
+    """Esta función evalúa si es_palindromo funciona correctamente.
+    """
+    texto="YOTUBE"
+    resultado=es_palindromo(texto)
+    assert isinstance(resultado, bool), "El resultado debe ser un valor booleano."
+    assert resultado is False, "No se obtiene el resultado esperado."
