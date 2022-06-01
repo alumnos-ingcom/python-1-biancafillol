@@ -33,7 +33,13 @@ def test_convertir_a_fahrenheit_negativo_a_positivo():
     resultado=convertir_a_fahrenheit(centigrados)
     assert isinstance(resultado, float), "El resultado debe ser un número decimal."
     assert resultado==24.8, "No se obtiene el resultado esperado."
-#---------------------CENTIGRADOS----------------------
+def test_convertir_a_fahrenheit_iguales():
+    """Esta función evalúa si convertir_a_fahrenheit funciona correctamente.
+    """
+    centigrados=-40.0
+    resultado=convertir_a_fahrenheit(centigrados)
+    assert isinstance(resultado, float), "El resultado debe ser un número decimal."
+    assert resultado==-40.0, "No se obtiene el resultado esperado."
 def test_convertir_a_centigrados_positivo():
     """Esta función evalúa si convertir_a_centigrados funciona correctamente.
     """
@@ -62,3 +68,10 @@ def test_convertir_a_centigrados_positivo_a_negativo():
     resultado=convertir_a_centigrados(fahrenheit)
     assert isinstance(resultado, float), "El resultado debe ser un número decimal."
     assert resultado==-15.555555555555555, "No se obtiene el resultado esperado."
+def test_convertir_a_centigrados_iguales():
+    """Esta función evalúa si convertir_a_fahrenheit funciona correctamente.
+    """
+    centigrados=-40.0
+    resultado=convertir_a_fahrenheit(centigrados)
+    assert isinstance(resultado, float), "El resultado debe ser un número decimal."
+    assert resultado==-40.0, "No se obtiene el resultado esperado."
